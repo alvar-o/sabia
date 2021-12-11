@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  background-color: #e6ecf0;
+}
+
+body.logged-in {
+  background-color: #fcfbe1;
+  background:
+    linear-gradient(135deg, #fae9aa55 25%, transparent 25%) -15px 0/ 30px 30px,
+    linear-gradient(225deg, #fae9aa 25%, transparent 25%) -15px 0/ 30px 30px,
+    linear-gradient(315deg, #fae9aa55 25%, transparent 25%) 0px 0/ 30px 30px,
+    linear-gradient(45deg, #fae9aa 25%, #fcfbe1 25%) 0px 0/ 30px 30px;
+}
+
+body.not-logged-in {
+  background-color: #ffd336;
+  background:
+    linear-gradient(135deg, #2ab01b55 25%, transparent 25%) -15px 0/ 30px 30px,
+    linear-gradient(225deg, #2ab01b 25%, transparent 25%) -15px 0/ 30px 30px,
+    linear-gradient(315deg, #2ab01b55 25%, transparent 25%) 0px 0/ 30px 30px,
+    linear-gradient(45deg, #2ab01b 25%, #ffd336 25%) 0px 0/ 30px 30px;
+}
+
+body.not-found {
+  background-color: #fceee1;
+  background:
+    linear-gradient(135deg, #fab7aa55 25%, transparent 25%) -15px 0/ 30px 30px,
+    linear-gradient(225deg, #fab7aa 25%, transparent 25%) -15px 0/ 30px 30px,
+    linear-gradient(315deg, #fab7aa55 25%, transparent 25%) 0px 0/ 30px 30px,
+    linear-gradient(45deg, #fab7aa 25%, #fceee1 25%) 0px 0/ 30px 30px;
+}
+
+/*** NAVBAR *******************************************************************/
+
+.navbar {
+  margin-bottom: 1rem;
+  background-color: #090a09;
+}
+
+.navbar :is(a, button) {
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  background: none;
+  display: inline-block;
+  padding: 1px 5px;
+}
+
+.navbar :is(a, button):hover {
+  background-color: #2b2b2b;
+  cursor: pointer
+}
+
+.navbar .navbar-brand:hover {
+  background: none;
+  color: #ffd648;
+}
+
+.navbar-brand svg {
+  display: inline-block;
+  width: 30px;
+  border-radius: 2px;
+  margin: 0 5px 2px 0;
+}
+
+ul.nav.navbar-nav li {
+  margin: 0 0.5em;
+}
+
+/*** HOMEPAGE *****************************************************************/
+
+.home-container {
+  height: calc(100vh - 32px - 3rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+
+.home-container .hero {
+  text-align: center;
+  background-color: #ffffffec;
+  backdrop-filter: blur(2px);
+  padding: 3em 3em 1em;
+  border-radius: 3em;
+  max-width: 400px;
+}
+
+.home-container .hero>svg {
+  display: block;
+  width: 85px;
+  border-radius: 2px;
+  margin: 0 auto;
+  color: black
+}
+
+.home-container .hero h1 {
+  margin-block-end: 1em;
+}
+
+.home-container .hero .btn {
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 1em
+}
+
+/*** MESSAGE LIST *************************************************************/
+
+#messages .list-group-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 7px 20px 12px;
+}
+
+#messages :not(.no-hover).list-group-item:hover {
+  background-color: #f4f8fa;
+}
+
+.message-area {
+  width: 100%;
+}
+
+.tl-profile-image {
+  width: 56px;
+  height: 56px;
+  margin: 2px 20px 10px 0px;
+  border-radius: 50%;
+}
+
+.btn-inline {
+  padding: 0 3px;
+  background: none;
+  border: none;
+  opacity: 0;
+  /* transition: opacity 0.5s; */
+}
+
+.list-group-item:hover .btn-inline {
+  opacity: 1;
+}
+
+.user-link {
+  color: #181818;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h4.username {
+  margin: 0.25rem 0;
+  padding: 1px 5px;
+  background: white;
+  border-radius: 3px;
+  width: 100%;
+}

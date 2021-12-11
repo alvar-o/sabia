@@ -9,7 +9,8 @@ const express = require('express'),
       errorHandler = require('./handlers/error'),
       authRoutes = require('./routes/auth'),
       messageRoutes = require('./routes/messages'),
-      { getUser, getAllMessages } = require('./routes/main'),
+      userRoutes = require('./routes/users'),
+      { getAllMessages } = require('./routes/main'),
       { loginRequired, ensureCorrectUser } = require('./middleware/auth')
 
 app.use(cors());
@@ -24,7 +25,12 @@ app.use(
     ensureCorrectUser, 
     messageRoutes);
 
-app.get('/api/users/:username', loginRequired, getUser)
+app.use(
+    '/api/users/:username',
+    loginRequired,
+    userRoutes);
+
+// app.get('/api/users/:username', loginRequired, getUser)
 
 app.get('/api/messages', loginRequired, getAllMessages);
 

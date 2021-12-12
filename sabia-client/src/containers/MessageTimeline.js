@@ -28,7 +28,7 @@ const MessageTimeline = ({
         fetchMessages(username);
         document.title = 'Sabiá' + (username ? ` | @${username}` : '');
         document.body.classList.add('logged-in');
-    }, [location]);
+    }, [fetchMessages, username, location]);
 
     return (
         <div className="row justify-content-center" style={{maxWidth: '760px', margin: '0 auto'}}>

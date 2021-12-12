@@ -4,7 +4,7 @@ import { useLocation, useNavigate } from "react-router";
 import { postMessage } from "../store/actions/messages";
 
 const MessageForm = props => {
-    const { errors, postMessage } = props;
+    const { postMessage } = props;
     const [text, setText] = useState(''); 
     const navigate = useNavigate();
     const location = useLocation();
@@ -43,8 +43,4 @@ const MessageForm = props => {
     )
 }
 
-const mapStateToProps = state => ({
-    errors: state.errors
-})
-
-export default connect(mapStateToProps, { postMessage })(MessageForm);
+export default connect(null, { postMessage })(MessageForm);

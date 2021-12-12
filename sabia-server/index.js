@@ -5,13 +5,13 @@ require('dotenv').config();
 const express = require('express'),
       app = express(),
       cors = require('cors'),
-      PORT = 8081,
       errorHandler = require('./handlers/error'),
       authRoutes = require('./routes/auth'),
       messageRoutes = require('./routes/messages'),
       userRoutes = require('./routes/users'),
       { getAllMessages } = require('./routes/main'),
-      { loginRequired, ensureCorrectUser } = require('./middleware/auth')
+      { loginRequired, ensureCorrectUser } = require('./middleware/auth'),
+      PORT = process.env.PORT || 8081;
 
 app.use(cors());
 app.use(express.urlencoded({extended: true}))

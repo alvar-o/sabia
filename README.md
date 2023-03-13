@@ -4,4 +4,4 @@
 
 This is a fullstack Twitter clone developed in an web developer bootcamp. It uses a Node.js+Express backend with a MongoDB database, and the front end is built with React, React Router and Redux.
 
-You can check it live at: https://sabia-client.herokuapp.com/
+You can check it live at: https://sabia.onrender.com/

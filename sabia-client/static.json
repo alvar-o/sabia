@@ -5,7 +5,7 @@
     },
     "proxies": {
         "/api": {
-            "origin": "https://sabia-backend.herokuapp.com/api"
+            "origin": "https://sabia-backend.onrender.com/api"
         }
     }
 }

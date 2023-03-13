@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+
 const AuthForm = ({ 
     heading, 
     buttonText, 
@@ -51,6 +52,9 @@ const AuthForm = ({
                         <small>
                             {errors.message}
                         </small>
+                        <button type="button" class="btn-close btn-small small" 
+                                aria-label="Close" onClick={removeError}
+                                style="position: absolute;width: auto;height: auto;right: 0.6em;top: 36%;"></button>
                     </div>
                 )}
                 <div className="row">

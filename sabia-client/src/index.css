@@ -17,30 +17,39 @@ body {
 }
 
 body.logged-in {
-  background-color: #fcfbe1;
+  background-color: #d6b09d;
   background:
-    linear-gradient(135deg, #fae9aa55 25%, transparent 25%) -15px 0/ 30px 30px,
-    linear-gradient(225deg, #fae9aa 25%, transparent 25%) -15px 0/ 30px 30px,
-    linear-gradient(315deg, #fae9aa55 25%, transparent 25%) 0px 0/ 30px 30px,
-    linear-gradient(45deg, #fae9aa 25%, #fcfbe1 25%) 0px 0/ 30px 30px;
+    linear-gradient(135deg, #a87d9454 25%, transparent 0) -15px 0/30px 30px,
+    linear-gradient(225deg, #dabfb1 25%, transparent 0) -15px 0/30px 30px,
+    linear-gradient(315deg, #a87d9454 25%, transparent 0) 0 0/30px 30px,
+    linear-gradient(45deg, #dabfb1 25%, #d6b09d 0) 0 0/30px 30px;
 }
 
-body.not-logged-in {
+/* body.not-logged-in {
   background-color: #ffd336;
   background:
     linear-gradient(135deg, #2ab01b55 25%, transparent 25%) -15px 0/ 30px 30px,
     linear-gradient(225deg, #2ab01b 25%, transparent 25%) -15px 0/ 30px 30px,
     linear-gradient(315deg, #2ab01b55 25%, transparent 25%) 0px 0/ 30px 30px,
     linear-gradient(45deg, #2ab01b 25%, #ffd336 25%) 0px 0/ 30px 30px;
+} */
+ 
+body.not-logged-in {
+  background-color: #93c0d7;
+  background:
+    linear-gradient(135deg, #1bb09c55 25%, transparent 25%) -15px 0/ 30px 30px,
+    linear-gradient(225deg, #1b9fb0 25%, transparent 25%) -15px 0/ 30px 30px,
+    linear-gradient(315deg, #1bb09c55 25%, transparent 25%) 0px 0/ 30px 30px,
+    linear-gradient(45deg, #1b9fb0 25%, #93c0d7 25%) 0px 0/ 30px 30px;
 }
 
 body.not-found {
-  background-color: #fceee1;
+  background-color: #7b6d61;
   background:
     linear-gradient(135deg, #fab7aa55 25%, transparent 25%) -15px 0/ 30px 30px,
     linear-gradient(225deg, #fab7aa 25%, transparent 25%) -15px 0/ 30px 30px,
     linear-gradient(315deg, #fab7aa55 25%, transparent 25%) 0px 0/ 30px 30px,
-    linear-gradient(45deg, #fab7aa 25%, #fceee1 25%) 0px 0/ 30px 30px;
+    linear-gradient(45deg, #fab7aa 25%, #7b6d61 25%) 0px 0/ 30px 30px;
 }
 
 /*** NAVBAR *******************************************************************/

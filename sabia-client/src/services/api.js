@@ -18,7 +18,10 @@ export const apiCall = (method, path, data) => {
             if (res.status === 204) return res.status;
             return res.json();
         })
-        .then(data => resolve(data))
+        .then(data => {
+            console.log(data)
+            resolve(data)
+        })
         .catch(err => {
             reject(err)})
     })

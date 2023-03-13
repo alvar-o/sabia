@@ -1,5 +1,12 @@
 import { useEffect, useState } from "react";
 
+const alert_btn_style = {
+    position: 'absolute',
+    width: 'auto',
+    height: 'auto',
+    right: '0.6em',
+    top: '36%'
+}
 
 const AuthForm = ({ 
     heading, 
@@ -54,7 +61,7 @@ const AuthForm = ({
                         </small>
                         <button type="button" class="btn-close btn-small small" 
                                 aria-label="Close" onClick={removeError}
-                                style="position: absolute;width: auto;height: auto;right: 0.6em;top: 36%;"></button>
+                                style={alert_btn_style}></button>
                     </div>
                 )}
                 <div className="row">

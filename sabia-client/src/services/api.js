@@ -6,9 +6,10 @@ export const setHeaders = headers => {
     else return headers
 }
 
-export const apiCall = (method, path, data) => {
+export const apiCall = (method, api_path, data) => {
     return new Promise((resolve, reject) => {
-        return fetch(path, {
+        const url = 'https://sabia-backend.onrender.com' + api_path
+        return fetch(url, {
             method,
             headers: setHeaders({ 'Content-Type': 'application/json' }),
             body: JSON.stringify(data)
